@@ -1,12 +1,12 @@
-package com.hakanboranbay.hausetypes;
+package com.hakanboranbay.housetypes;
 
 import java.util.ArrayList;
 
-public class SummerHause extends Hause {
+public class Flat extends House {
 	
-	ArrayList<SummerHause> summerHauseList = new ArrayList<>();
-	
-	public SummerHause(float price, int squareMeter, int roomNumber, int livingRoomNumber) {
+	ArrayList<Flat> flatList = new ArrayList<>();
+
+	public Flat(float price, int squareMeter, int roomNumber, int livingRoomNumber) {
 		if (price < 0 || squareMeter <= 0 || roomNumber <= 0 || livingRoomNumber < 0) {
 			return;
 		}
@@ -15,5 +15,5 @@ public class SummerHause extends Hause {
 		this.roomNumber = roomNumber;
 		this.livingRoomNumber = livingRoomNumber;
 	}
-
+	
 }

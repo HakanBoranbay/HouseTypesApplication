@@ -1,8 +1,8 @@
-package com.hakanboranbay.hausetypes;
+package com.hakanboranbay.housetypes;
 
 import java.util.ArrayList;
 
-public class Villa extends Hause {
+public class Villa extends House {
 	
 	ArrayList<Villa> villaList = new ArrayList<>();
 	

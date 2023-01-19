@@ -1,14 +1,14 @@
-package com.hakanboranbay.hausetypes;
+package com.hakanboranbay.housetypes;
 
 import java.util.ArrayList;
 
-public abstract class Hause {
+public abstract class House {
 
 	float price;
 	int squareMeter;
 	int roomNumber;
 	int livingRoomNumber;
-	ArrayList<Hause> hauseList = new ArrayList<>();
+	ArrayList<House> hauseList = new ArrayList<>();
 	
 	public float getPrice() {
 		return price;
