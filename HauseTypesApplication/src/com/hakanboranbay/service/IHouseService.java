@@ -1,6 +1,6 @@
 package com.hakanboranbay.service;
 
-import java.util.ArrayList;
+import java.util.LinkedHashSet;
 
 import com.hakanboranbay.housetypes.House;
 
@@ -19,6 +19,6 @@ public interface IHouseService {
 	double getAverageSquareMeterOfFlats();
 	double getAverageSquareMeterOfVillas();
 	double getAverageSquareMeterOfSummerHouses();
-	ArrayList<House> getHouseByRoomNumbers(int roomNumber, int LivingRoomNumber);
+	LinkedHashSet<House> getHouseByRoomNumbers(int roomNumber, int LivingRoomNumber);
 	
 }

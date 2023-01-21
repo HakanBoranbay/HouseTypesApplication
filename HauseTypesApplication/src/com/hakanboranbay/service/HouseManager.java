@@ -1,6 +1,6 @@
 package com.hakanboranbay.service;
 
-import java.util.ArrayList;
+import java.util.LinkedHashSet;
 
 import com.hakanboranbay.housetypes.House;
 import com.hakanboranbay.main.Houses;
@@ -15,7 +15,7 @@ import com.hakanboranbay.main.Houses;
  */
 public class HouseManager implements IHouseService {
 	
-	Houses houses;
+	Houses houses = new Houses();
 
 	@Override
 	public float getTotalHousePrices() {
@@ -58,9 +58,9 @@ public class HouseManager implements IHouseService {
 	}
 	
 	@Override
-	public ArrayList<House> getHouseByRoomNumbers(int roomNumber, int LivingRoomNumber) {
-		ArrayList<House> houseList = new ArrayList<>();
-		ArrayList<House> mainList = houses.getHauseList();
+	public LinkedHashSet<House> getHouseByRoomNumbers(int roomNumber, int LivingRoomNumber) {
+		LinkedHashSet<House> houseList = new LinkedHashSet<>();
+		LinkedHashSet<House> mainList = houses.getHauseList();
 		for (House house : mainList) {
 			if (house.getRoomNumber() == roomNumber && house.getLivingRoomNumber() == LivingRoomNumber) {
 				houseList.add(house);
@@ -69,7 +69,7 @@ public class HouseManager implements IHouseService {
 		return houseList;
 	}
 	
-	private float getTotalPrice(ArrayList<House> list) {
+	private float getTotalPrice(LinkedHashSet<House> list) {
 		float totalPrice = 0;
 		for (House house : list) {
 			totalPrice += house.getPrice();
@@ -77,7 +77,7 @@ public class HouseManager implements IHouseService {
 		return totalPrice;
 	}
 	
-	private double getAverageSquaremeter(ArrayList<House> list) {
+	private double getAverageSquaremeter(LinkedHashSet<House> list) {
 		int totalSquareMeter = 0;
 		int counter = 0;
 		for (House house : list) {
