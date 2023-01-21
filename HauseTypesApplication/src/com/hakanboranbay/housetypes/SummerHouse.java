@@ -2,6 +2,11 @@ package com.hakanboranbay.housetypes;
 
 import java.util.ArrayList;
 
+/**
+ * A class that extends House abstract class and represent the summer house type.
+ * @author hakanboranbay
+ *
+ */
 public class SummerHouse extends House {
 	
 	ArrayList<SummerHouse> summerHauseList = new ArrayList<>();

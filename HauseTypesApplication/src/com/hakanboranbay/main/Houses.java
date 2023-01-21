@@ -7,6 +7,12 @@ import com.hakanboranbay.housetypes.House;
 import com.hakanboranbay.housetypes.SummerHouse;
 import com.hakanboranbay.housetypes.Villa;
 
+/**
+ * A class that 3 of each type of houses are created.
+ * 4 methods to get lists of all houses, flats, villas and summer houses.
+ * @author hakanboranbay
+ *
+ */
 public class Houses {
 	
 	ArrayList<House> hauseList = new ArrayList<>();

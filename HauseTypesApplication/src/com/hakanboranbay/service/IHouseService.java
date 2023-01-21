@@ -4,6 +4,11 @@ import java.util.ArrayList;
 
 import com.hakanboranbay.housetypes.House;
 
+/**
+ * House manager interface.
+ * @author hakanboranbay
+ *
+ */
 public interface IHouseService {
 	
 	float getTotalHousePrices();

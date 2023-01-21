@@ -2,6 +2,11 @@ package com.hakanboranbay.housetypes;
 
 import java.util.ArrayList;
 
+/**
+ * A class that extends House abstract class and represent the villa type.
+ * @author hakanboranbay
+ *
+ */
 public class Villa extends House {
 	
 	ArrayList<Villa> villaList = new ArrayList<>();

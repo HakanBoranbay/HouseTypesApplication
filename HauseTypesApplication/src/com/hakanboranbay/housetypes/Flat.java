@@ -2,6 +2,11 @@ package com.hakanboranbay.housetypes;
 
 import java.util.ArrayList;
 
+/**
+ * A class that extends House abstract class and represent the flat type.
+ * @author hakanboranbay
+ *
+ */
 public class Flat extends House {
 	
 	ArrayList<Flat> flatList = new ArrayList<>();

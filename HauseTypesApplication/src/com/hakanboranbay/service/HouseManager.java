@@ -5,6 +5,14 @@ import java.util.ArrayList;
 import com.hakanboranbay.housetypes.House;
 import com.hakanboranbay.main.Houses;
 
+/**
+ * House manager class implements house service interface and involves:
+ * methods to get total prices of flats, villas, summer houses and all houses,
+ * methods to get total square meters of flats, villas, summer houses and all houses,
+ * and method to get a house by its room and living room numbers.
+ * @author hakanboranbay
+ *
+ */
 public class HouseManager implements IHouseService {
 	
 	Houses houses;

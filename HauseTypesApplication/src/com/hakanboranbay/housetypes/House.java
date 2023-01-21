@@ -2,6 +2,11 @@ package com.hakanboranbay.housetypes;
 
 import java.util.ArrayList;
 
+/**
+ * An abstract class that represents all types of houses.
+ * @author hakanboranbay
+ *
+ */
 public abstract class House {
 
 	float price;
